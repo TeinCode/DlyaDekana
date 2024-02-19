@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Выживач с Жакичем</title>
+<link rel="stylesheet" href="./style.css">
+<style>
+
+
+</style>
+</head>
+<body>
+
+<div id="login-screen">
+  <h2>Выжить с мини Жаком Фреско</h2>
+  <img src="./Жак.png" alt="">
+  <label for="username">Введите свой nickname:</label>
+  <input type="text" id="username">
+  <button onclick="startGame()">Начать выживать</button>
+</div>
+
+<div id="game-screen" style="display:none;">
+  <p>Nickname: <span id="player-name"></span></p>
+  <p>Текущее время: <span id="current-time"></span></p>
+  <p>Время выживания: <span id="game-time"></span></p>
+  <p>Жизни: <span id="lives">5</span></p>
+  <p>Время до появления зомби и мин: <span id="timer"></span> сек.</p>
+  <canvas id="game-canvas" width="1200" height="1200"></canvas>
+</div>
+
+<div id="results-screen" style="display:none;">
+  <h2>Результаты выживания</h2>
+  <p>Время выживания: <span id="result-time"></span></p>
+  <p>Количество Зомби: <span id="result-monsters"></span></p>
+  <p>Количество мин: <span id="result-traps"></span></p>
+  <button onclick="restartGame()">Новое выживание?</button>
+</div>
+<script defer src="./main.js">lolo</script>
+</body>
+</html>
